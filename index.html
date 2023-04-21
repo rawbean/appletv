@@ -1,22 +1,49 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>导航菜单</title>
-    <meta charset="UTF-8">
-    <style>
-      nav ul li a {
-        display: block;
-        height: 20px;
-        line-height: 20px;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>导航菜单</h1>
-    <nav>
-      <ul>
-        <li><a href="https://open.163.com/">网易公开课</a></li>
-      </ul>
-    </nav>
-  </body>
+<head>
+	<title>Navigation Buttons</title>
+	<meta charset="UTF-8">
+	<style>
+		.container {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+		}
+		
+		button {
+			width: 50px;
+			height: 50px;
+			border: none;
+			border-radius: 5px;
+			margin-right: 5px;
+			background-color: #007bff;
+			color: white;
+			font-size: 24px;
+			font-weight: bold;
+			cursor: pointer;
+		}
+
+		button:hover {
+			background-color: #0056b3;
+		}
+
+		button:focus {
+			outline: none;
+		}
+
+		button:active {
+			background-color: #003c80;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<button><a href="https://open.163.com">网易公开课</a></button>
+		<button><a href="https://www.example.com">Button 2</a></button>
+		<button><a href="https://www.example.com">Button 3</a></button>
+		<button><a href="https://www.example.com">Button 4</a></button>
+		<button><a href="https://www.example.com">Button 5</a></button>
+	</div>
+</body>
 </html>
